@@ -1,0 +1,9 @@
+.logo{
+    height: 100px;
+    width: auto;
+}
+.article_content{
+    display: grid;
+    grid-template-columns:  5fr 5fr ;
+    gap:  5%;
+}
