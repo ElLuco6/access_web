@@ -7,3 +7,12 @@
     grid-template-columns:  5fr 5fr ;
     gap:  5%;
 }
+.avatar{
+    height: 100px;
+}
+.commentaire{
+
+}
+.tableur{
+    width: 100%
+}

@@ -4,116 +4,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mon blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="flex flex-col min-h-screen">
     <header class="bg-slate-100">
         <nav class="flex justify-between items-center p-5">
             <div class="flex justify-between gap-5">
                 <img class="logo" src="assets/logo.webp" alt="logo du site">
                 <h1 class="text-3xl font-bold  self-center">Mon blog</h1>
             </div>
-            <a class="text-1xl border-solid border-2 border-sky-500 p-2" href="login.html">login</a>
+            <a class="text-1xl border-solid border-2 border-sky-500 p-2" href="login.html">Login</a>
         </nav>
 
     </header>
 
-    <main>
-        <article>
-            <h2>Titre de l'article</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo architecto quidem assumenda beatae autem deserunt animi iure cum voluptates fugit. Aut, eum! Dolores voluptas, aspernatur pariatur provident possimus labore ipsam!</p>
-            Crée un tableau avec 4 colonnes et 10 lignes, avec entête et pied de
-tableau.
-Ce tableau s'intègre dans une page d'un article de votre blog.
-Vous listez sous l’article plusieurs commentaires.
-            <table>
-                <thead>
-                    <tr>
-                        <th>colonne 1</th>
-                        <th>colonne 2</th>
-                        <th>colonne 3</th>
-                        <th>colonne 4</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>ligne 1</th>
-                        <th>ligne 1</th>
-                        <th>ligne 1</th>
-                        <th>ligne 1</th>
-                    </tr>
-                    <tr>
-                        <th>ligne 2</th>
-                        <th>ligne 2</th>
-                        <th>ligne 2</th>
-                        <th>ligne 2</th>
-                    </tr>
-                    <tr>
-                        <th>ligne 3</th>
-                        <th>ligne 3</th>
-                        <th>ligne 3</th>
-                        <th>ligne 3</th>
-                    </tr>
-                    <tr>
-                        <th>ligne 4</th>
-                        <th>ligne 4</th>
-                        <th>ligne 4</th>
-                        <th>ligne 4</th>
-                    </tr>
-                    <tr>
-                        <th>ligne 5</th>
-                        <th>ligne 5</th>
-                        <th>ligne 5</th>
-                        <th>ligne 5</th>
-                    </tr>
-                    <tr>
-                        <th>ligne 5</th>
-                        <th>ligne 5</th>
-                        <th>ligne 5</th>
-                        <th>ligne 5</th>
-                    </tr>
-                    <tr>
-                        <th>ligne 6</th>
-                        <th>ligne 6</th>
-                        <th>ligne 6</th>
-                        <th>ligne 6</th>
-                    </tr>
-                    <tr>
-                        <th>ligne 7</th>
-                        <th>ligne 7</th>
-                        <th>ligne 7</th>
-                        <th>ligne 7</th>
-                    </tr>
-                    <tr>
-                        <th>ligne 8</th>
-                        <th>ligne 8</th>
-                        <th>ligne 8</th>
-                        <th>ligne 8</th>
-                    </tr>
-                    <tr>
-                        <th>ligne 9</th>
-                        <th>ligne 9</th>
-                        <th>ligne 9</th>
-                        <th>ligne 9</th>
-                    </tr>
-                    <tr>
-                        <th>ligne 10</th>
-                        <th>ligne 10</th>
-                        <th>ligne 10</th>
-                        <th>ligne 10</th>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                      <th scope="row" colspan="2">Average age</th>
-                      <td>33</td>
-                    </tr>
-                  </tfoot>
-            </table>
+    <main class="flex-grow">
+        <article  class="my-3 bg-slate-200 p-2 rounded">
+            <h2 class="my-1">Titre de l'article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo architecto quidem assumenda beatae
+                autem deserunt animi iure cum voluptates fugit. Aut, eum! Dolores voluptas, aspernatur pariatur
+                provident possimus labore ipsam!</p>
+            
+            
+            <div class="flex justify-center m-5">
+                <table class="tableur">
+                    <caption>
+                        Entête de mon tableau
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>colonne 1</th>
+                            <th>colonne 2</th>
+                            <th>colonne 3</th>
+                            <th>colonne 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>ligne 1</th>
+                            <th>ligne 1</th>
+                            <th>ligne 1</th>
+                            <th>ligne 1</th>
+                        </tr>
+                        <tr>
+                            <th>ligne 2</th>
+                            <th>ligne 2</th>
+                            <th>ligne 2</th>
+                            <th>ligne 2</th>
+                        </tr>
+                        <tr>
+                            <th>ligne 3</th>
+                            <th>ligne 3</th>
+                            <th>ligne 3</th>
+                            <th>ligne 3</th>
+                        </tr>
+                        <tr>
+                            <th>ligne 4</th>
+                            <th>ligne 4</th>
+                            <th>ligne 4</th>
+                            <th>ligne 4</th>
+                        </tr>
+                        <tr>
+                            <th>ligne 5</th>
+                            <th>ligne 5</th>
+                            <th>ligne 5</th>
+                            <th>ligne 5</th>
+                        </tr>
+                        <tr>
+                            <th>ligne 5</th>
+                            <th>ligne 5</th>
+                            <th>ligne 5</th>
+                            <th>ligne 5</th>
+                        </tr>
+                        <tr>
+                            <th>ligne 6</th>
+                            <th>ligne 6</th>
+                            <th>ligne 6</th>
+                            <th>ligne 6</th>
+                        </tr>
+                        <tr>
+                            <th>ligne 7</th>
+                            <th>ligne 7</th>
+                            <th>ligne 7</th>
+                            <th>ligne 7</th>
+                        </tr>
+                        <tr>
+                            <th>ligne 8</th>
+                            <th>ligne 8</th>
+                            <th>ligne 8</th>
+                            <th>ligne 8</th>
+                        </tr>
+                        <tr>
+                            <th>ligne 9</th>
+                            <th>ligne 9</th>
+                            <th>ligne 9</th>
+                            <th>ligne 9</th>
+                        </tr>
+                        <tr>
+                            <th>ligne 10</th>
+                            <th>ligne 10</th>
+                            <th>ligne 10</th>
+                            <th>ligne 10</th>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row" colspan="4">Bas de page</th>
+    
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
         </article>
+
+        <section>
+            <article id="comm1" class="commentaire m-5">
+                <h3 class="my-1">Commentaire 1</h3>
+                <div class="article_content">
+                    <img src="assets/pp1.webp" alt="avatar 1" class="avatar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ullam veritatis possimus </p>
+                </div>
+            </article>
+            <article id="comm2" class="commentaire m-5">
+                <h3 class="my-1">Commentaire 2</h3>
+                <div class="article_content">
+                    <img src="assets/pp2.webp" alt="avatar 2"  class="avatar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ullam veritatis possimus </p>
+                </div>
+            </article>
+            <article id="comm3" class="commentaire m-5">
+                <h3 class="my-1">Commentaire 3</h3>
+                <div class="article_content">
+                    <img src="assets/pp3.webp" alt="avatar 3"  class="avatar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ullam veritatis possimus </p>
+                </div>
+            </article>
+        </section>
+
+
     </main>
 
     <footer class="bg-slate-300 p-5">
