@@ -1,3 +1,4 @@
+
 .logo{
     height: 100px;
     width: auto;
@@ -10,9 +11,33 @@
 .avatar{
     height: 100px;
 }
-.commentaire{
 
-}
 .tableur{
     width: 100%
+}
+
+form.form-example {
+    display: table;
+  }
+  
+  div.form-example {
+    display: table-row;
+  }
+  
+  label,
+  input {
+    display: table-cell;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    padding-right: 10px;
+  }
+.header_container,footer{
+    background-color: #24292f;
+    
+}
+main{
+    background-color: #0d1117;
+    
 }
