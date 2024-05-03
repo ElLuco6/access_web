@@ -10,21 +10,28 @@
 </head>
 
 <body class="flex flex-col min-h-screen">
-    <header class="text-white header_container"> 
+    <header class="text-white header_container">
         <nav class="flex justify-between items-center p-5">
-            <div class="flex justify-between gap-5">
-                <a href="index.html">
-                <img class="logo h-10" src="assets/logo.webp" alt="logo du site">
-            </a>
-                <h1 class="text-3xl font-bold  self-center">Mon blog</h1>
-            </div>
-            <a class="text-lg border border-solid border-white rounded-lg px-4 py-2 hover:bg-white hover:text-gray-700 transition-colors" href="login.html">Login</a>
-        </nav> 
+
+            <ul class="flex justify-between gap-5 w-full">
+                <li>
+                    <a href="index.html" class="flex gap-5 text-3xl font-bold self-center">
+                        <img class="logo h-10" src="assets/logo.webp" alt="logo du site">Mon blog
+                    </a>
+                </li>
+                <li
+                    class="text-lg border border-solid border-white rounded-lg px-4 py-2 hover:bg-white hover:text-gray-700 transition-colors">
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+
+        </nav>
     </header>
 
 
     <main class="flex-grow">
         <section class="p-5">
+            <h1 class="text-white font-bold text-4xl">Les derniers articles</h1>
             <article class="my-3 bg-slate-200 p-2 rounded">
                 <h2 class="my-1">Article 1</h2>
                 <div class="article_content">
