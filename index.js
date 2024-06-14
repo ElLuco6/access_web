@@ -7,8 +7,8 @@ function togglePasswordVisibility() {
       x.type = "password";
     }
   }
-  document.getElementById("buttonShowHide").addEventListener("click", togglePasswordVisibility);
- 
+  document.getElementById("checkboxShowHide").addEventListener("change", togglePasswordVisibility);
+   
   document.getElementById('myForm').addEventListener('submit', function (event) {
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;

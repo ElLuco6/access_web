@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Connectez-vous à notre blog pour commencer à interagir avec la communauté. Entrez votre email et votre mot de passe pour continuer.">
     <link rel="icon" href="assets/logo.webp">
-    <title>Login</title>
+    <title>Connexion</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="flex flex-col min-h-screen ">
 
-    <header class="text-white header_container">
+    <header class="text-white header_container" aria-label="Barre de navigation">
         <nav class="flex justify-between items-center p-5">
 
             <ul class="flex justify-between gap-5 w-full">
                 <li>
                     <a href="index.html" class="flex gap-5 text-3xl font-bold self-center">
-                        <img class="logo h-10" src="assets/logo.webp" alt="logo du site">Mon blog
+                        <img class="logo h-10" src="assets/logo.webp" alt="logo du site" aria-hidden="true">Mon blog
                     </a>
                 </li>
                 <li
                     class="text-lg border border-solid border-white rounded-lg px-4 py-2 hover:bg-white hover:text-gray-700 transition-colors">
-                    <a href="login.html">Login</a>
+                    <a href="login.html" aria-label="lien vers la page de connexion">Connexion</a>
                 </li>
             </ul>
 
@@ -34,21 +34,23 @@
         <div class="container mx-auto bg-slate-200 p-8 rounded-lg shadow-lg max-w-md">
             <h1 class="text-3xl text-center mb-6">Se connecter</h1>
 
-            <form action="index.html">
+            <form action="index.html" aria-label="Formulaire de connexion">
                 <div class="mb-4">
                     <label for="email" class="block text-gray-700">Entrez votre email (mail@exemple.com) * :</label>
-                    <input type="email" autofocus autocomplete="on" name="email" id="email" required
+                    <input type="email" autofocus autocomplete="username" name="email" id="email" required
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address."
                         class="w-full px-4 py-2 border rounded-md">
                     <div id="emailError" class="text-red-500"></div>
                 </div>
                 <div class="mb-4">
                     <label for="password" class="block text-gray-700">Entrez votre mot de passe (minimum 5 caratères)* :</label>
-                    <input type="password" minlength="5" autocomplete="on" name="password" id="password" required
+                    <input type="password" minlength="5" autocomplete="current-password" name="password" id="password" required
                         class="w-full px-4 py-2 border rounded-md">
                         <div id="passwordError" class="text-red-500"></div>
-                    <button type="button" id="buttonShowHide"
-                        class="mt-3 inset-y-0 right-0 px-3 py-2 bg-gray-200 border border-gray-300 rounded-md">Afficher</button>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="checkboxShowHide" class=" mr-2">
+                            <label for="checkboxShowHide" class="mt-2">Afficher</label>
+                        </div>
                 </div>
                 <p class="py-2">* champ obligatoire</p>
                 <button type="submit"
@@ -57,7 +59,7 @@
         </div>
 
     </main>
-    <footer class="text-white p-5">
+    <footer class="text-white p-5" aria-label="Bas de page" >
         <ul>
             <li>Blog appartenant à Saint-supéry Lucas</li>
             <li><a href="tel:0612345678">06.12.34.56.78</a></li>

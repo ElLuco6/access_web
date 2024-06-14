@@ -12,30 +12,31 @@
 </head>
 
 <body class="flex flex-col min-h-screen">
-    <header class="text-white header_container"> 
+    <header class="text-white header_container" aria-label="Barre de navigation">
         <nav class="flex justify-between items-center p-5">
-            
+
             <ul class="flex justify-between gap-5 w-full">
                 <li>
                     <a href="index.html" class="flex gap-5 text-3xl font-bold self-center">
-                        <img class="logo h-10" src="assets/logo.webp" alt="logo du site">Mon blog
+                        <img class="logo h-10" src="assets/logo.webp" alt="logo du site" aria-hidden="true">Mon blog
                     </a>
                 </li>
-                <li class="text-lg border border-solid border-white rounded-lg px-4 py-2 hover:bg-white hover:text-gray-700 transition-colors">
-                    <a href="login.html">Login</a>
+                <li
+                    class="text-lg border border-solid border-white rounded-lg px-4 py-2 hover:bg-white hover:text-gray-700 transition-colors">
+                    <a href="login.html" aria-label="lien vers la page de connexion">Connexion</a>
                 </li>
             </ul>
-            
-    </nav> 
+
+        </nav>
     </header>
 
     <main class="flex-grow">
-        <h1 class=" m-5 my-1 text-white font-bold text-4xl">Titre de l'article</h1>
-        <article  class="m-5 bg-slate-200 p-2 rounded">
+        <article class="m-5 bg-slate-200 p-2 rounded" aria-label="Contenu de l\article">
+            <h1 class="my-5 text-black font-bold text-4xl">Titre de l'article</h1>
+            <time class="my-1" datetime="2024-06-14">14 Juin 2024</time>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo architecto quidem assumenda beatae
                 autem deserunt animi iure cum voluptates fugit. Aut, eum! Dolores voluptas, aspernatur pariatur
-                provident possimus labore ipsam!</p>
-            
+                provident possimus labore ipsam! </p>
             
             <div class="flex justify-center m-5">
                 <table class="tableur">
@@ -128,9 +129,10 @@
             </div>
         </article>
 
-        <aside class="">
-            <article id="comm1" class="commentaire m-5 my-3 bg-slate-200 p-2 rounded">
+        <aside aria-label="Section des commentaire">
+            <article id="comm1"  class="commentaire m-5 my-3 bg-slate-200 p-2 rounded">
                 <h2 class="my-1">Commentaire 1</h2>
+                <time class="my-1" datetime="2024-06-14">14 Juin 2024</time>
                 <div class="article_content">
                     <img src="assets/pp1.webp" alt="avatar 1" class="avatar">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ullam veritatis possimus </p>
@@ -138,6 +140,7 @@
             </article>
             <article id="comm2" class="commentaire m-5 my-3 bg-slate-200 p-2 rounded">
                 <h2 class="my-1">Commentaire 2</h2>
+                <time class="my-1" datetime="2024-06-14">14 Juin 2024</time>
                 <div class="article_content">
                     <img src="assets/pp2.webp" alt="avatar 2"  class="avatar">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ullam veritatis possimus </p>
@@ -145,6 +148,7 @@
             </article>
             <article id="comm3" class="commentaire m-5 my-3 bg-slate-200 p-2 rounded">
                 <h2 class="my-1">Commentaire 3</h2>
+                <time class="my-1" datetime="2024-06-14">14 Juin 2024</time>
                 <div class="article_content">
                     <img src="assets/pp3.webp" alt="avatar 3"  class="avatar">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ullam veritatis possimus </p>
@@ -155,7 +159,8 @@
 
     </main>
 
-    <footer class="text-white p-5">
+    
+    <footer class="text-white p-5" aria-label="Bas de page" >
         <ul>
             <li>Blog appartenant à Saint-supéry Lucas</li>
             <li><a href="tel:0612345678">06.12.34.56.78</a></li>
