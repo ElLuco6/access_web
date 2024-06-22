@@ -12,8 +12,8 @@
 </head>
 
 <body class="flex flex-col min-h-screen">
-    <header class="text-white header_container" aria-label="Barre de navigation">
-        <nav class="flex justify-between items-center p-5">
+    <header class="text-white header_container" aria-label="Haut de page">
+        <nav class="flex justify-between items-center p-5" aria-label="menu principal">
 
             <ul class="flex justify-between gap-5 w-full">
                 <li>
@@ -40,7 +40,7 @@
                     <p>Lorem ipsum dolor sit, amet consectetur </p>
                     <img src="assets/placeholder.webp" alt="image article 1 dogo" class="rounded">
                 </div>
-                <a href="article.html#comm1" aria-label="commentaire de l\'article 1">3 commentaire</a>
+                <a href="article.html#comm1" aria-label="commentaire de l'article 1">3 commentaire</a>
             </article>
             <article class="my-3 bg-slate-200 p-2 rounded">
                 <a href="article.html"><h2 class="my-1">Article 2</h2></a>
@@ -49,7 +49,7 @@
 
                     <img src="assets/placeholder.webp" alt="image article 2 dogo" class="rounded">
                 </div>
-                <a href="article.html#comm2" aria-label="Commentaires de l\'article 2 ">4 commentaire</a>
+                <a href="article.html#comm2" aria-label="Commentaires de l'article 2 ">4 commentaire</a>
             </article>
             <article class="my-3 bg-slate-200 p-2 rounded">
                 <a href="article.html"><h2>Article 3</h2></a>
@@ -58,7 +58,7 @@
 
                     <img src="assets/placeholder.webp" alt="image article 3 dogo" class="rounded">
                 </div>
-                <a href="article.html#comm3" aria-label="Commentaires de l\'article 3 ">8 commentaire</a>
+                <a href="article.html#comm3" aria-label="Commentaires de l'article 3 ">8 commentaire</a>
             </article>
             <article class="my-3 bg-slate-200 p-2 rounded">
                 <a href="article.html"><h2>Article 4</h2></a>
@@ -67,7 +67,7 @@
 
                     <img src="assets/placeholder.webp" alt="image article 4 dogo" class="rounded">
                 </div>
-                <a href="article.html#comm1" aria-label="Commentaires de l\'article 4 ">5 commentaire</a>
+                <a href="article.html#comm1" aria-label="Commentaires de l'article 4 ">5 commentaire</a>
             </article>
             <article class="my-3 bg-slate-200 p-2 rounded">
                 <a href="article.html"><h2>Article 5</h2></a>
@@ -76,20 +76,21 @@
 
                     <img src="assets/placeholder.webp" alt="image article 5 dogo" class="rounded">
                 </div>
-                <a href="article.html" aria-label="Commentaires de l\'article 5 ">6 commentaire</a>
+                <a href="article.html" aria-label="Commentaires de l'article 5 ">6 commentaire</a>
             </article>
         </section>
     </main>
 
 
 
-    <footer class="text-white p-5" aria-label="Bas de page" >
-        <ul>
+    <footer class="bg-gray-800 p-5 text-white" aria-label="Bas de page">
+        <ul class="list-none">
             <li>Blog appartenant à Saint-supéry Lucas</li>
-            <li><a href="tel:0612345678">06.12.34.56.78</a></li>
-            <li><a href="mailto:lucas@gmail.com">lucas@gmail.com</a></li>
+            <li><a href="tel:0612345678" class="text-blue-400">06.12.34.56.78</a></li>
+            <li><a href="mailto:lucas@gmail.com" class="text-blue-400">lucas@gmail.com</a></li>
+            <li><a href="mentionsLegale.html" class="text-blue-400">Mentions Légales</a></li>
+            <li><a href="sitemap.html" class="text-blue-400">Plan du site</a></li>
         </ul>
-
     </footer>
 </body>
 
